@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =====================================================
    STAYFINDER - MAIN CSS
    ===================================================== */
@@ -647,4 +648,655 @@ a {
         border: 1px solid #ddd !important;
     }
 
+=======
+/* =====================================================
+   STAYFINDER - MAIN CSS
+   ===================================================== */
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #222;
+    background: #f8f7f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar {
+    padding: 16px 0;
+    background: #ffffff;
+}
+
+.navbar-brand {
+    color: #111 !important;
+    letter-spacing: -0.5px;
+}
+
+.brand-mark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #111;
+    color: white;
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 7px;
+}
+
+.nav-link:hover {
+    color: #777 !important;
+}
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+.hero-section {
+    position: relative;
+
+    min-height: 650px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.25)
+        );
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 750px;
+
+    color: white;
+}
+
+.hero-small-text {
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: clamp(45px, 7vw, 80px);
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+
+    max-width: 600px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   SEARCH BOX
+   ===================================================== */
+
+.search-box {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.15);
+
+    margin-top: 35px;
+}
+
+.search-box label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+    color: #555;
+}
+
+.search-box .form-control,
+.search-box .form-select {
+    border-radius: 10px;
+
+    min-height: 48px;
+
+    border: 1px solid #ddd;
+}
+
+.search-box .form-control:focus,
+.search-box .form-select:focus {
+    border-color: #111;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   SECTION TITLES
+   ===================================================== */
+
+.section-label {
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #777;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 45px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   DESTINATION CARDS
+   ===================================================== */
+
+.destination-card {
+    position: relative;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.08);
+}
+
+.destination-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent 35%,
+            rgba(0, 0, 0, 0.75)
+        );
+}
+
+.destination-overlay h4 {
+    margin: 0;
+
+    font-size: 26px;
+}
+
+
+/* =====================================================
+   HOTEL CARDS
+   ===================================================== */
+
+.hotel-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #eee;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    height: 100%;
+}
+
+.hotel-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+.hotel-card-image {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.hotel-card h4 {
+    font-size: 24px;
+}
+
+.rating {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   FEATURE BOXES
+   ===================================================== */
+
+.feature-box {
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    height: 100%;
+
+    border: 1px solid #eee;
+
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #f0eee9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+   ===================================================== */
+
+.page-header {
+    background: #eeece7;
+
+    padding: 80px 0;
+
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   FILTER BOX
+   ===================================================== */
+
+.filter-box {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.filter-box label {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+.filter-box .form-control,
+.filter-box .form-select {
+    min-height: 45px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   SORT SELECT
+   ===================================================== */
+
+.sort-select {
+    min-width: 180px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   BOOKING PAGE
+   ===================================================== */
+
+.booking-img {
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+.price-summary {
+    background: #f1eee8;
+
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.price-box {
+    background: #111;
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+   ===================================================== */
+
+.empty-state {
+    background: white;
+
+    padding: 70px 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #eee;
+}
+
+
+/* =====================================================
+   PROFILE
+   ===================================================== */
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background: #111;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+}
+
+#profileForm .form-control {
+    min-height: 50px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+}
+
+#profileForm .form-control:focus {
+    border-color: #111;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.btn-dark {
+    background: #111;
+
+    border-color: #111;
+
+    border-radius: 10px;
+
+    padding: 10px 20px;
+}
+
+.btn-dark:hover {
+    background: #333;
+
+    border-color: #333;
+}
+
+.btn-outline-dark {
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    background: #111;
+
+    color: #ddd;
+
+    padding: 55px 0;
+
+    margin-top: 70px;
+}
+
+.footer h4 {
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #aaa;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   FORM ELEMENTS
+   ===================================================== */
+
+.form-control,
+.form-select {
+    border-color: #ddd;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #111;
+
+    box-shadow:
+        0 0 0 0.15rem rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 720px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .page-header {
+        padding: 55px 0;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+    }
+
+    .destination-card {
+        height: 250px;
+    }
+
+    .hotel-card-image {
+        height: 210px;
+    }
+
+}
+
+
+/* =====================================================
+   PRINT BOOKING
+   ===================================================== */
+
+@media print {
+
+    .navbar,
+    .footer,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+    }
+
+    .card {
+        box-shadow: none !important;
+
+        border: 1px solid #ddd !important;
+    }
+
+>>>>>>> faed86fd0e617d723b1443fd0662fd339ca18cc5
 }
